@@ -1,0 +1,9 @@
+<!-- src/app/content-card/content-card.component.html -->
+<div *NgIf="content">
+    <h2>{{ content.title }}</h2>
+    <p>{{ content.description }}</p>
+    <p>Creator: {{ content.creator }}</p>
+    <img *NgIf="content.imgURL" [src]="content.imgURL" alt="{{ content.title }}" style="max-width: 100%;">
+    <p>Type: {{ content.type || 'N/A' }}</p>
+  </div>
+  
